@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sensor App</string>
+    <string name="current_val">Current</string>
+    <string name="sensor_reading">Stand By</string>
+    <string name="max_reading">Maximum</string>
+    <string name="min_reading">Minimum</string>
+    <string name="ave_reading">Avgerage</string>
+    <string name="btn_reset">Reset</string>
+    <string name="game_msg">Try and find the secret brightness!!</string>
+</resources>

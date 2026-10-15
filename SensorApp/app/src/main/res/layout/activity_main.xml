@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/sensorReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sensor_reading"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/sensorMax"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_val_label" />
+
+    <TextView
+        android:id="@+id/min_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/min_reading"
+        android:textAlignment="viewStart"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorMax" />
+
+    <TextView
+        android:id="@+id/avg_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ave_reading"
+        android:textAlignment="viewStart"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorMin" />
+
+    <TextView
+        android:id="@+id/max_val_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/max_reading"
+        android:textAlignment="viewStart"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorReading" />
+
+    <TextView
+        android:id="@+id/current_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/current_val"
+        android:textAlignment="viewStart"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/sensorReading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sensorMin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral100"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_label" />
+
+    <TextView
+        android:id="@+id/sensorAverage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_primary100"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avg_label" />
+
+    <TextView
+        android:id="@+id/gameStatus"
+        android:layout_width="410dp"
+        android:layout_height="71dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <Button
+        android:id="@+id/reset_min_max"
+        android:layout_width="146dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_reset"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:backgroundTint="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorAverage"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/game_label"
+        android:layout_width="334dp"
+        android:layout_height="21dp"
+        android:text="@string/game_msg"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral90"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gameStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
